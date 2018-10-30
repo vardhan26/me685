@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 #include "matplotlib-cpp/matplotlibcpp.h"
-namespace plt = matplotlibcpp; 
-namespace plt2 = matplotlibcpp; 
-using namespace std; 
+namespace plt = matplotlibcpp;
+namespace plt2 = matplotlibcpp;
+using namespace std;
 
 
 #define delT 1  //time stepsize
@@ -50,49 +50,49 @@ vector<double> exact(float x,int maxtime){
 		for(int i=0;i<=1000;i++)
 			C[C.size()-1] += 2*delN*((i*delN) - 1)*sin(((int)C.size())*pi*(i*delN));
 		cout<<C[C.size()-1]<<"\n";
-		for(int time=0;time<maxtime;time++){	
+		for(int time=0;time<maxtime;time++){
 			T[time] += C[C.size()-1]*sin(C.size()*pi*x)*exp((-1)*time*pow(C.size()*pi,2));
 			cout<<time<<"   "<<T[time]<<endl;}
 		C.push_back(0);
 		p++;
 	}while(maxdiff(T,Tlast)>epsilon && p<100);
-	for(int i=0;i<(int)T.size();i++){                                                                            
+	for(int i=0;i<(int)T.size();i++){
          cout<<T[i]<<" ";}
 	return T;
 }
-// Driver program 
-int main() 
-{   int i;       
-    double lambda = delT/(delX*delX);                                                                          
-    vector<double> X(101);                                                                                    
+// Driver program
+int main()
+{   int i;
+    double lambda = delT/(delX*delX);
+    vector<double> X(101);
     vector<float> path;
     for(int i =0; i<(int)X.size();i++){
-	path.push_back(i*delX);	
-	}                                                                                                          
-    vector<double> a(101,-lambda);     // <- diagonals of                                                                       
-    vector<double> b(101,1+2*lambda);  // <- Tri-Diagonal                                                                     
-    vector<double> c(101,-lambda);     // <- Matrix                                                                     
-    vector<double> d(101,0);           // <- Vector on RHS                                                                      
-    d[0]=1;                            // values corrected at the boundaries                                                                       
-    b[0]=1; b[100]=1;                   
-    c[0]=0; c[100]=0;                                                                                         
-    a[0]=0; a[100]=0;                                                                                         
-    vector<vector<double>> T;                                                                                                                                                                 
+	path.push_back(i*delX);
+	}
+    vector<double> a(101,-lambda);     // <- diagonals of
+    vector<double> b(101,1+2*lambda);  // <- Tri-Diagonal
+    vector<double> c(101,-lambda);     // <- Matrix
+    vector<double> d(101,0);           // <- Vector on RHS
+    d[0]=1;                            // values corrected at the boundaries
+    b[0]=1; b[100]=1;
+    c[0]=0; c[100]=0;
+    a[0]=0; a[100]=0;
+    vector<vector<double>> T;
     int j,count=0;
 	vector<double> D = d;
-	X = TDMA(a,b,c,d);     
+	X = TDMA(a,b,c,d);
 	T.push_back(X);
-	count++;                                                                                             
+	count++;
 	while(maxdiff(D,X)>epsilon && count<=10000){
 	D = X;
 	d = D;
-	                                                                                   
+
 	X = TDMA(a,b,c,d);
  	T.push_back(X);
- 	count++;		                                                                                                                                         
+ 	count++;
  	}
 	cout<<T.size()<<" "<<count<<endl;
-	
+
 // plotting
 	vector<double> E = exact(0.25,T.size());
 	vector<int> Time;
@@ -100,26 +100,26 @@ int main()
 		Time.push_back(i*delT);
 	D.clear();
 	for(int j=0;j<T.size();j++)
-		D.push_back(T[j][25]);	
+		D.push_back(T[j][25]);
 	plt::plot(Time,E,"r");
 	plt::plot(Time,D,"r--");
-	D.clear();	
+	D.clear();
 	for(int j=0;j<T.size();j++)
 		D.push_back(T[j][50]);
-	vector<double> F = exact(0.50,T.size());	
-	plt::plot(Time,F,"g");	
+	vector<double> F = exact(0.50,T.size());
+	plt::plot(Time,F,"g");
 	plt::plot(Time,D,"g--");
-	D.clear();	
+	D.clear();
 	for(int j=0;j<T.size();j++)
-		D.push_back(T[j][75]);	
-	vector<double> G = exact(0.75,T.size());	
+		D.push_back(T[j][75]);
+	vector<double> G = exact(0.75,T.size());
 	plt::plot(Time,G,"b");
-	plt::plot(Time,D,"b--");	
+	plt::plot(Time,D,"b--");
 	plt::show();
 	plt2::plot(path,X);
 	plt2::show();
-    return 0; 
-} 
+    return 0;
+}
 
 
 

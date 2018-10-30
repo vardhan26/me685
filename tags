@@ -1,0 +1,150 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Derived	matplotlib-cpp/matplotlibcpp.h	/^    struct Derived : T, Fallback { };$/;"	s	struct:matplotlibcpp::detail::is_callable_impl
+Fallback	matplotlib-cpp/matplotlibcpp.h	/^    struct Fallback { void operator()(); };$/;"	s	struct:matplotlibcpp::detail::is_callable_impl
+NPY_NO_DEPRECATED_API	matplotlib-cpp/matplotlibcpp.h	18;"	d
+PyString_FromString	matplotlib-cpp/matplotlibcpp.h	23;"	d
+TDMA	me685assignment1.cpp	/^vector<double> TDMA(vector<double> a,vector<double> b,vector<double> c,vector<double> d){$/;"	f
+_interpreter	matplotlib-cpp/matplotlibcpp.h	/^    _interpreter() {$/;"	f	struct:matplotlibcpp::detail::_interpreter
+_interpreter	matplotlib-cpp/matplotlibcpp.h	/^struct _interpreter {$/;"	s	namespace:matplotlibcpp::detail
+annotate	matplotlib-cpp/matplotlibcpp.h	/^inline bool annotate(std::string annotation, double x, double y)$/;"	f	namespace:matplotlibcpp
+axis	matplotlib-cpp/matplotlibcpp.h	/^inline void axis(const std::string &axisstr)$/;"	f	namespace:matplotlibcpp
+backend	matplotlib-cpp/matplotlibcpp.h	/^inline void backend(const std::string& name)$/;"	f	namespace:matplotlibcpp
+clf	matplotlib-cpp/matplotlibcpp.h	/^inline void clf() {$/;"	f	namespace:matplotlibcpp
+close	matplotlib-cpp/matplotlibcpp.h	/^inline void close()$/;"	f	namespace:matplotlibcpp
+delN	me685assignment1.cpp	10;"	d	file:
+delT	me685assignment1.cpp	8;"	d	file:
+delX	me685assignment1.cpp	9;"	d	file:
+detail	matplotlib-cpp/matplotlibcpp.h	/^namespace detail {$/;"	n	namespace:matplotlibcpp
+draw	matplotlib-cpp/matplotlibcpp.h	/^inline void draw()$/;"	f	namespace:matplotlibcpp
+dtype	matplotlib-cpp/matplotlibcpp.h	/^    typedef decltype(&Fallback::operator()) dtype;$/;"	t	struct:matplotlibcpp::detail::is_callable_impl
+epsilon	me685assignment1.cpp	12;"	d	file:
+errorbar	matplotlib-cpp/matplotlibcpp.h	/^bool errorbar(const std::vector<NumericX> &x, const std::vector<NumericY> &y, const std::vector<NumericX> &yerr, const std::map<std::string, std::string> &keywords = {})$/;"	f	namespace:matplotlibcpp
+exact	me685assignment1.cpp	/^vector<double> exact(float x,int maxtime){$/;"	f
+figure	matplotlib-cpp/matplotlibcpp.h	/^inline void figure()$/;"	f	namespace:matplotlibcpp
+figure_size	matplotlib-cpp/matplotlibcpp.h	/^inline void figure_size(size_t w, size_t h)$/;"	f	namespace:matplotlibcpp
+fill_between	matplotlib-cpp/matplotlibcpp.h	/^bool fill_between(const std::vector<Numeric>& x, const std::vector<Numeric>& y1, const std::vector<Numeric>& y2, const std::map<std::string, std::string>& keywords)$/;"	f	namespace:matplotlibcpp
+get	matplotlib-cpp/matplotlibcpp.h	/^    static _interpreter& get() {$/;"	f	struct:matplotlibcpp::detail::_interpreter
+get_array	matplotlib-cpp/matplotlibcpp.h	/^PyObject* get_array(const std::vector<Numeric>& v)$/;"	f	namespace:matplotlibcpp
+grid	matplotlib-cpp/matplotlibcpp.h	/^inline void grid(bool flag)$/;"	f	namespace:matplotlibcpp
+hist	matplotlib-cpp/matplotlibcpp.h	/^bool hist(const std::vector<Numeric>& y, long bins=10,std::string color="b", double alpha=1.0)$/;"	f	namespace:matplotlibcpp
+import_numpy	matplotlib-cpp/matplotlibcpp.h	/^    void *import_numpy() {$/;"	f	struct:matplotlibcpp::detail::_interpreter
+import_numpy	matplotlib-cpp/matplotlibcpp.h	/^    void import_numpy() {$/;"	f	struct:matplotlibcpp::detail::_interpreter
+ion	matplotlib-cpp/matplotlibcpp.h	/^    inline void ion() {$/;"	f	namespace:matplotlibcpp
+is_callable	matplotlib-cpp/matplotlibcpp.h	/^struct is_callable$/;"	s	namespace:matplotlibcpp::detail
+is_callable_impl	matplotlib-cpp/matplotlibcpp.h	/^struct is_callable_impl<false, T>$/;"	s	namespace:matplotlibcpp::detail
+is_callable_impl	matplotlib-cpp/matplotlibcpp.h	/^struct is_callable_impl<true, T>$/;"	s	namespace:matplotlibcpp::detail
+legend	matplotlib-cpp/matplotlibcpp.h	/^inline void legend()$/;"	f	namespace:matplotlibcpp
+loglog	matplotlib-cpp/matplotlibcpp.h	/^bool loglog(const std::vector<NumericX>& x, const std::vector<NumericY>& y, const std::string& s = "")$/;"	f	namespace:matplotlibcpp
+main	me685assignment1.cpp	/^int main() $/;"	f
+matplotlibcpp	matplotlib-cpp/matplotlibcpp.h	/^namespace matplotlibcpp {$/;"	n
+maxdiff	me685assignment1.cpp	/^double maxdiff(vector<double> a,vector<double> b){$/;"	f
+named_hist	matplotlib-cpp/matplotlibcpp.h	/^bool named_hist(std::string label,const std::vector<Numeric>& y, long bins=10, std::string color="b", double alpha=1.0)$/;"	f	namespace:matplotlibcpp
+named_loglog	matplotlib-cpp/matplotlibcpp.h	/^bool named_loglog(const std::string& name, const std::vector<Numeric>& x, const std::vector<Numeric>& y, const std::string& format = "")$/;"	f	namespace:matplotlibcpp
+named_plot	matplotlib-cpp/matplotlibcpp.h	/^bool named_plot(const std::string& name, const std::vector<Numeric>& x, const std::vector<Numeric>& y, const std::string& format = "")$/;"	f	namespace:matplotlibcpp
+named_plot	matplotlib-cpp/matplotlibcpp.h	/^bool named_plot(const std::string& name, const std::vector<Numeric>& y, const std::string& format = "")$/;"	f	namespace:matplotlibcpp
+named_semilogx	matplotlib-cpp/matplotlibcpp.h	/^bool named_semilogx(const std::string& name, const std::vector<Numeric>& x, const std::vector<Numeric>& y, const std::string& format = "")$/;"	f	namespace:matplotlibcpp
+named_semilogy	matplotlib-cpp/matplotlibcpp.h	/^bool named_semilogy(const std::string& name, const std::vector<Numeric>& x, const std::vector<Numeric>& y, const std::string& format = "")$/;"	f	namespace:matplotlibcpp
+operator ()	matplotlib-cpp/matplotlibcpp.h	/^    bool operator()(const Iterable& ticks, const Callable& f, const std::string& format)$/;"	f	struct:matplotlibcpp::detail::plot_impl
+operator ()	matplotlib-cpp/matplotlibcpp.h	/^    bool operator()(const IterableX& x, const IterableY& y, const std::string& format)$/;"	f	struct:matplotlibcpp::detail::plot_impl
+pause	matplotlib-cpp/matplotlibcpp.h	/^inline void pause(Numeric interval)$/;"	f	namespace:matplotlibcpp
+pi	me685assignment1.cpp	11;"	d	file:
+plot	matplotlib-cpp/matplotlibcpp.h	/^bool plot() { return true; }$/;"	f	namespace:matplotlibcpp
+plot	matplotlib-cpp/matplotlibcpp.h	/^bool plot(const A& a, const B& b, const std::string& format, Args... args)$/;"	f	namespace:matplotlibcpp
+plot	matplotlib-cpp/matplotlibcpp.h	/^bool plot(const std::vector<Numeric> &x, const std::vector<Numeric> &y, const std::map<std::string, std::string>& keywords)$/;"	f	namespace:matplotlibcpp
+plot	matplotlib-cpp/matplotlibcpp.h	/^bool plot(const std::vector<Numeric>& y, const std::string& format = "")$/;"	f	namespace:matplotlibcpp
+plot	matplotlib-cpp/matplotlibcpp.h	/^bool plot(const std::vector<NumericX>& x, const std::vector<NumericY>& y, const std::string& s = "")$/;"	f	namespace:matplotlibcpp
+plot	matplotlib-cpp/matplotlibcpp.h	/^inline bool plot(const std::vector<double>& x, const std::vector<double>& y, const std::map<std::string, std::string>& keywords) {$/;"	f	namespace:matplotlibcpp
+plot	matplotlib-cpp/matplotlibcpp.h	/^inline bool plot(const std::vector<double>& x, const std::vector<double>& y, const std::string& format = "") {$/;"	f	namespace:matplotlibcpp
+plot	matplotlib-cpp/matplotlibcpp.h	/^inline bool plot(const std::vector<double>& y, const std::string& format = "") {$/;"	f	namespace:matplotlibcpp
+plot_impl	matplotlib-cpp/matplotlibcpp.h	/^struct plot_impl { };$/;"	s	namespace:matplotlibcpp::detail
+plot_impl	matplotlib-cpp/matplotlibcpp.h	/^struct plot_impl<std::false_type>$/;"	s	namespace:matplotlibcpp::detail
+plot_impl	matplotlib-cpp/matplotlibcpp.h	/^struct plot_impl<std::true_type>$/;"	s	namespace:matplotlibcpp::detail
+quiver	matplotlib-cpp/matplotlibcpp.h	/^bool quiver(const std::vector<NumericX>& x, const std::vector<NumericY>& y, const std::vector<NumericU>& u, const std::vector<NumericW>& w, const std::map<std::string, std::string>& keywords = {})$/;"	f	namespace:matplotlibcpp
+s_backend	matplotlib-cpp/matplotlibcpp.h	/^static std::string s_backend;$/;"	m	namespace:matplotlibcpp::detail
+s_python_empty_tuple	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_empty_tuple;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_annotate	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_annotate;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_axis	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_axis;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_clf	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_clf;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_close	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_close;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_draw	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_draw;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_errorbar	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_errorbar;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_figure	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_figure;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_fill_between	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_fill_between;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_grid	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_grid;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_hist	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_hist;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_ion	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_ion;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_legend	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_legend;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_loglog	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_loglog;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_pause	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_pause;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_plot	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_plot;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_quiver	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_quiver;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_save	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_save;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_semilogx	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_semilogx;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_semilogy	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_semilogy;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_show	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_show;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_stem	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_stem;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_subplot	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_subplot;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_tight_layout	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_tight_layout;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_title	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_title;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_xkcd	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_xkcd;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_xlabel	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_xlabel;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_xlim	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_xlim;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_xticks	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_xticks;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_ylabel	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_ylabel;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_ylim	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_ylim;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+s_python_function_yticks	matplotlib-cpp/matplotlibcpp.h	/^    PyObject *s_python_function_yticks;$/;"	m	struct:matplotlibcpp::detail::_interpreter
+save	matplotlib-cpp/matplotlibcpp.h	/^inline void save(const std::string& filename)$/;"	f	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<bool> { const static NPY_TYPES type = NPY_BOOL; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<double> { const static NPY_TYPES type = NPY_DOUBLE; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<float> { const static NPY_TYPES type = NPY_FLOAT; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<int16_t> { const static NPY_TYPES type = NPY_SHORT; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<int32_t> { const static NPY_TYPES type = NPY_INT; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<int64_t> { const static NPY_TYPES type = NPY_INT64; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<int8_t> { const static NPY_TYPES type = NPY_INT8; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<uint16_t> { const static NPY_TYPES type = NPY_USHORT; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<uint32_t> { const static NPY_TYPES type = NPY_ULONG; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<uint64_t> { const static NPY_TYPES type = NPY_UINT64; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<uint8_t> { const static NPY_TYPES type = NPY_UINT8; };$/;"	s	namespace:matplotlibcpp
+select_npy_type	matplotlib-cpp/matplotlibcpp.h	/^template <typename T> struct select_npy_type { const static NPY_TYPES type = NPY_NOTYPE; }; \/\/Default$/;"	s	namespace:matplotlibcpp
+semilogx	matplotlib-cpp/matplotlibcpp.h	/^bool semilogx(const std::vector<NumericX>& x, const std::vector<NumericY>& y, const std::string& s = "")$/;"	f	namespace:matplotlibcpp
+semilogy	matplotlib-cpp/matplotlibcpp.h	/^bool semilogy(const std::vector<NumericX>& x, const std::vector<NumericY>& y, const std::string& s = "")$/;"	f	namespace:matplotlibcpp
+show	matplotlib-cpp/matplotlibcpp.h	/^inline void show(const bool block = true)$/;"	f	namespace:matplotlibcpp
+stem	matplotlib-cpp/matplotlibcpp.h	/^bool stem(const std::vector<Numeric> &x, const std::vector<Numeric> &y, const std::map<std::string, std::string>& keywords)$/;"	f	namespace:matplotlibcpp
+stem	matplotlib-cpp/matplotlibcpp.h	/^bool stem(const std::vector<Numeric>& y, const std::string& format = "")$/;"	f	namespace:matplotlibcpp
+stem	matplotlib-cpp/matplotlibcpp.h	/^bool stem(const std::vector<NumericX>& x, const std::vector<NumericY>& y, const std::string& s = "")$/;"	f	namespace:matplotlibcpp
+subplot	matplotlib-cpp/matplotlibcpp.h	/^inline void subplot(long nrows, long ncols, long plot_number)$/;"	f	namespace:matplotlibcpp
+tight_layout	matplotlib-cpp/matplotlibcpp.h	/^inline void tight_layout() {$/;"	f	namespace:matplotlibcpp
+title	matplotlib-cpp/matplotlibcpp.h	/^inline void title(const std::string &titlestr)$/;"	f	namespace:matplotlibcpp
+type	matplotlib-cpp/matplotlibcpp.h	/^    typedef decltype(test<Derived>(nullptr)) type;$/;"	t	struct:matplotlibcpp::detail::is_callable_impl
+type	matplotlib-cpp/matplotlibcpp.h	/^    typedef is_function<T> type;$/;"	t	struct:matplotlibcpp::detail::is_callable_impl
+type	matplotlib-cpp/matplotlibcpp.h	/^    typedef typename is_callable_impl<std::is_class<T>::value, T>::type type;$/;"	t	struct:matplotlibcpp::detail::is_callable
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<bool> { const static NPY_TYPES type = NPY_BOOL; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<double> { const static NPY_TYPES type = NPY_DOUBLE; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<float> { const static NPY_TYPES type = NPY_FLOAT; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<int16_t> { const static NPY_TYPES type = NPY_SHORT; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<int32_t> { const static NPY_TYPES type = NPY_INT; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<int64_t> { const static NPY_TYPES type = NPY_INT64; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<int8_t> { const static NPY_TYPES type = NPY_INT8; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<uint16_t> { const static NPY_TYPES type = NPY_USHORT; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<uint32_t> { const static NPY_TYPES type = NPY_ULONG; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<uint64_t> { const static NPY_TYPES type = NPY_UINT64; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <> struct select_npy_type<uint8_t> { const static NPY_TYPES type = NPY_UINT8; };$/;"	m	struct:matplotlibcpp::select_npy_type
+type	matplotlib-cpp/matplotlibcpp.h	/^template <typename T> struct select_npy_type { const static NPY_TYPES type = NPY_NOTYPE; }; \/\/Default$/;"	m	struct:matplotlibcpp::select_npy_type
+value	matplotlib-cpp/matplotlibcpp.h	/^    static constexpr bool value = type::value;$/;"	m	struct:matplotlibcpp::detail::is_callable_impl
+xkcd	matplotlib-cpp/matplotlibcpp.h	/^inline void xkcd() {$/;"	f	namespace:matplotlibcpp
+xlabel	matplotlib-cpp/matplotlibcpp.h	/^inline void xlabel(const std::string &str)$/;"	f	namespace:matplotlibcpp
+xlim	matplotlib-cpp/matplotlibcpp.h	/^inline double* xlim()$/;"	f	namespace:matplotlibcpp
+xlim	matplotlib-cpp/matplotlibcpp.h	/^void xlim(Numeric left, Numeric right)$/;"	f	namespace:matplotlibcpp
+xticks	matplotlib-cpp/matplotlibcpp.h	/^inline void xticks(const std::vector<Numeric> &ticks, const std::map<std::string, std::string>& keywords)$/;"	f	namespace:matplotlibcpp
+xticks	matplotlib-cpp/matplotlibcpp.h	/^inline void xticks(const std::vector<Numeric> &ticks, const std::vector<std::string> &labels = {}, const std::map<std::string, std::string>& keywords = {})$/;"	f	namespace:matplotlibcpp
+ylabel	matplotlib-cpp/matplotlibcpp.h	/^inline void ylabel(const std::string &str)$/;"	f	namespace:matplotlibcpp
+ylim	matplotlib-cpp/matplotlibcpp.h	/^inline double* ylim()$/;"	f	namespace:matplotlibcpp
+ylim	matplotlib-cpp/matplotlibcpp.h	/^void ylim(Numeric left, Numeric right)$/;"	f	namespace:matplotlibcpp
+yticks	matplotlib-cpp/matplotlibcpp.h	/^inline void yticks(const std::vector<Numeric> &ticks, const std::map<std::string, std::string>& keywords)$/;"	f	namespace:matplotlibcpp
+yticks	matplotlib-cpp/matplotlibcpp.h	/^inline void yticks(const std::vector<Numeric> &ticks, const std::vector<std::string> &labels = {}, const std::map<std::string, std::string>& keywords = {})$/;"	f	namespace:matplotlibcpp
+~_interpreter	matplotlib-cpp/matplotlibcpp.h	/^    ~_interpreter() {$/;"	f	struct:matplotlibcpp::detail::_interpreter
