@@ -17,15 +17,15 @@ double relError(vector<double> x,vector<double> y){
 }
 
 vector< vector<double> > updateA(vector< vector<double> > x,vector<double> y,double del){
-    for(int i=1;i<y.size()-1;i++){
-        x[i][i]=2+4*C*del*del*y[i]*y[i]*y[i];
+    for(int i=1;i<y.size()-2;i++){
+        x[i][i]=-1*(2+4*C*del*del*y[i]*y[i]*y[i]);
     }
     return x;
 }
 
 vector<double> updateB(vector<double> x,vector<double> y,double del){
-    for(int i=1;i<y.size()-1;i++){
-        x[i]=3*C*del*del*y[i]*y[i]*y[i]*y[i]-del*del;
+    for(int i=1;i<y.size()-2;i++){
+        x[i]=-3*C*del*del*y[i]*y[i]*y[i]*y[i]+del*del;
     }
     return x;
 }
@@ -80,14 +80,16 @@ int main(int argc,char* argv[]) {
     vector<double> Tlast,B;
     vector<double> T(nodalPoints,0);
     vector< vector<double> > A(nodalPoints,vector<double>(nodalPoints,0));
-    double delX = (Txl - Tx0)/(nodalPoints-1);
+    double delT = (Txl - Tx0)/(nodalPoints-1);
+    double delX = 5.000/(nodalPoints-1);
+    cout<<"delX:"<<delX<<endl;
     for(int i=0;i<nodalPoints;i++){
-        Tlast.push_back(Tx0 + i*delX);
-        B.push_back(3*pow(delX,2)*C*pow(Tlast[i],4)-pow(delX,2));
+        Tlast.push_back(Tx0 + i*delT);
+        B.push_back(-3*pow(delX,2)*C*pow(Tlast[i],4)+pow(delX,2));
         try{
-            A.at(i).at(i-1) = -1;
-            A.at(i).at(i+1) = -1;
-            A.at(i).at(i) = 2+4*pow(delX,2)*C*pow(Tlast[i],3);
+            A.at(i).at(i-1) = 1;
+            A.at(i).at(i+1) = 1;
+            A.at(i).at(i) = -1*(2.00+4*pow(delX,2)*C*pow(Tlast[i],3));
         }
         catch(const std::out_of_range& oor){
             fill(A[i].begin(),A[i].end(),0);
@@ -107,7 +109,7 @@ int main(int argc,char* argv[]) {
     cout<<"\nstarting gauss seidel iterations"<<endl;
     while(flag && count<20){
         count++;
-        T = gaussSeidel2(A,B,T);
+        T = gaussSeidel(A,B,T);
         if(relError(T,Tlast)<0.01){
             flag=0;
             break;
